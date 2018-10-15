@@ -26,3 +26,16 @@ STOP = [u'all', u'just', u"don't", u'being', u'over', u'both', u'through', u'you
     u'again', u'no', u'when', u'same', u'how', u'other', u'which', u'you', u"shan't", u'shan', u'needn', u'haven', u'after',
     u'most', u'such', u'why', u'a', u'off', u'i', u'm', u'yours', u"you'll", u'so', u'y', u"she's", u'the', u'having', u'once',
         u'TRUMP']
+
+TW_CONSUMER_KEY = json_content['TW_CONSUMER_KEY']
+TW_CONSUMER_SECRET = json_content['TW_CONSUMER_SECRET']
+TW_ACCESS_TOKEN_KEY = json_content['TW_ACCESS_TOKEN_KEY']
+TW_ACCESS_TOKEN_SECRET = json_content['TW_ACCESS_TOKEN_SECRET']
+NYT_API_KEY = json_content['NYT_API_KEY']
+
+url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json'
+
+params = {
+    "api-key": NYT_API_KEY,
+    "sort": "newest",
+}
