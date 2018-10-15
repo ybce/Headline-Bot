@@ -1,6 +1,5 @@
 from config import STOP, url, params
 import requests
-import requests
 from thesaurus import Word
 
 
@@ -22,9 +21,7 @@ def new_headline(headline):
     return new_headline_string
 
 
-
 def get_nyt_headlines_with_url():
-
     r = requests.get(url, params=params)
     docs = r.json()['response']['docs']
     headlines = []

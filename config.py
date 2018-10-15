@@ -2,8 +2,8 @@ import boto3
 import json
 
 
-BUCKET_NAME = 'twitterbotybce' # replace with your bucket name
-KEY = 'config.json' # replace with your object key
+BUCKET_NAME = 'twitterbotybce'
+KEY = 'config.json'
 
 s3 = boto3.resource('s3')
 
